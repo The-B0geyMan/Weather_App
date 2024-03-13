@@ -12,6 +12,7 @@ let weatherProperty = document.querySelector('.weather-property');
 let weatherIcon = document.querySelector('.weather-icon');
 let weatherMin = document.querySelector('.weather-min');
 let weatherMax = document.querySelector('.weather-max');
+let weatherTemp = document.querySelector('.weather-temp');
 
 let city = "London";
 
@@ -70,6 +71,7 @@ const getWeather = async () =>{
         weatherDateTime.innerHTML = `${new Intl.DateTimeFormat("en-US", options).format(date)}&#176;`;
 
         weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${weather[0].icon}@2x.png" alt="${weather[0].main}">`
+        weatherTemp.innerHTML = `${(main.temp - 273.15).toFixed()}&#176;`;
         weatherMin.innerHTML = `Min: ${(main.temp_min - 273.15).toFixed()}&#176;`;
         weatherMax.innerHTML = `Max: ${(main.temp_max - 273.15).toFixed()}&#176;`;
         weatherProperty.innerHTML = `${weather[0].main}`
