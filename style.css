@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Noto+Color+Emoji&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Architects Daughter", cursive;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #1e1e1e;
+    background-image: url('.//images/snow.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    
+}
+
+.container{
+    width: 40%;
+    min-width: 30rem;
+    background-color: rgba(255, 255, 255, 0.712);
+    /* margin: 4rem auto; */
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    /* backdrop-filter: blur(8px); */
+}
+
+input{
+    margin-left: 1rem;
+    border: 0;
+    outline: 0;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.weather_Search{
+    width: 23rem;
+    height: 3rem;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+    & i{
+        color: #fff;
+        font-size: 1.4rem;
+    }
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.weather-icon{
+   filter: drop-shadow(30px 10px 20px #33312fa6);
+   -webkit-filter: drop-shadow(30px 10px 20px #33312fa6);
+}
+
+.weather-body{
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+    & .weather-city{
+        font-size: 2rem;
+        margin: 2rem 0 0.5rem 0;
+    }
+
+    & .weather-date-time{
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    & .weather-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.7rem;
+        margin-bottom: 1rem;
+    }
+
+    & .weather-property{
+        width:fit-content;
+        height: 1.4rem;
+        padding: 1rem;
+        background-color: #1e1e1e;
+        color: #fff;
+        font-size: 1.6rem;
+        border-radius: 2rem;
+        -webkit-border-radius: 2rem;
+        -moz-border-radius: 2rem;
+        -ms-border-radius: 2rem;
+        -o-border-radius: 2rem;
+        display: grid;
+        place-content: center;
+    }
+
+    & .weather-icon{
+        font-size: 2.2rem;
+    }
+
+    & .weather-minmax{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        gap: 2rem;
+    }
+}
+
+.weather-extra-info{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    & .cards{
+        height: 5rem;
+        background-color: #fff;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1.5rem;
+        font-size: 1.6rem;
+        padding: 1rem 1rem;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        & .card-info{
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+    }
+}
